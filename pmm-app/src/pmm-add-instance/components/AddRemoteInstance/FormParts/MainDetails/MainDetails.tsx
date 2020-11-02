@@ -36,7 +36,6 @@ export const MainDetailsFormPart: FC<MainDetailsFormPartProps> = ({ remoteInstan
         label={Messages.form.labels.mainDetails.username}
         placeholder={Messages.form.placeholders.mainDetails.username}
         validators={[validators.required]}
-        disabled={remoteInstanceCredentials.isRDS}
       />
       <PasswordInputField
         name="password"
